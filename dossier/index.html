@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="affiche">
+	Tapez un mot : <br><br><input type="text" id="txt1"><br>
+	<br>
+	<input type="button" value="Click Here" id="btn" onclick="calcul()"><br><br>
+	le resultat est : 
+	<br><br>
+	<label id="resultat"></label><br>
+	<br>
+	</div> 
+	<script type="text/javascript">
+		function calcul() {
+ 			 var txt1 = document.getElementById("txt1").value;
+  			 var btn = txt1.length;
+  			 document.getElementById("resultat").innerHTML = btn;
+		}
+	</script>
+</body>
+</html>

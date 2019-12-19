@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	  <div id="affiche">
+	  
+	  	Entrez une phrase : <br><br><input id="txt1" type="text">
+	  	<br><br>
+	  	Entrez une Lettre : <br><br></body><input id="txt2" type="text">
+	  	<br><br>
+	  	<button id="calculer" onclick="calcul();">calculer</button>
+	  	<br><br>
+	  	<label id="resultat">----</label> 
+         
+
+	  </div>
+	  <script>
+	  	function calcul(){
+         var phrase=document.getElementById('txt1').value;
+         var lettre=document.getElementById('txt2').value;
+         var nombre=0; 
+         for (var i = 0; i <phrase.length; i++) {
+         	if (phrase.charAt(i)==lettre) {
+         		nombre++;
+         	}
+         }
+         document.getElementById('resultat').innerHTML=nombre; 
+	  	}
+	  </script>
+
+</body>

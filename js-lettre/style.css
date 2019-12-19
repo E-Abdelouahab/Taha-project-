@@ -1,0 +1,32 @@
+body {
+background-color: #6495ED;
+}
+#affiche {
+	border-radius: 20px;
+	background-color: #00008B;
+	width: 60%;
+	height: 80%;
+	text-align: center;
+	position: absolute;
+	padding-top: 40px;
+	color: white;
+	font-size: 30px;
+	font-family: Arial;
+}	
+input {
+	width: 50%;
+	height: 10%;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 20px;
+}
+#calculer {
+	width: 40%;
+	height: 10%;
+	font-family: tahoma;
+	font-size: 20px;
+}
+#resultat {
+	color: white;
+	font-size: 30px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="affiche">
+	Entrez des Nombres : <br><br><input type="nombre" id="x"><br>
+	<br><input type="nombre" id="y"><br>
+	<br>
+	<input type="button" value="calculer" onclick="calcul()"><br><br>
+	<label>le resultat est :</label><br>
+	<br>
+	<input id="somme"></input>
+	</div>
+	<script type="text/javascript">
+		function calcul() {
+ 			 var x = new Number(document.getElementById("x").value);
+  			 var y = new Number(document.getElementById("y").value);
+  			 var somme = x + y;
+  			 document.getElementById("somme").value = somme;
+		}
+	</script>
+</body>
+</html>
